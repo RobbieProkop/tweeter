@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  background-image: url("../images/he-zhu-1YODHOIj46Q-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+
+  height: 80vh;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.profile img {
+  max-height: 80vh;
+  max-width: 22vw;
+}
+
+.name {
+  padding-top: 1rem;
+}
