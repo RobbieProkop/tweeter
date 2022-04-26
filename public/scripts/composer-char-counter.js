@@ -4,12 +4,15 @@
 
 $(() => {
   $("#tweet-text").on("input", function () {
-    console.log(this);
-    const $startNum = $(this).val();
-    console.log($startNum);
-    const $childrenVal = $(this).next().children(".counter").val();
+    const $inputNum = $(this).val().length;
+    // console.log($inputNum);
+    const $childrenVal = $(this)
+      .next()
+      .children(".counter")
+      .val(140 - $inputNum);
+    // const $newVal = $childrenVal - $inputNum;
 
-    console.log($childrenVal);
+    // console.log($childrenVal);
   });
 });
 
