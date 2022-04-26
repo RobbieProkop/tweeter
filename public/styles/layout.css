@@ -67,12 +67,13 @@ button {
 } */
 
 .container {
-  /* display: flex;
-  justify-content: space-around; */
-  /* width: 90%; */
-  padding: 0 10%;
+  display: flex;
+  justify-content: center;
 }
 
+.container .new-tweet {
+  width: 90%;
+}
 .container h2 {
   padding: 1rem 0;
 }
