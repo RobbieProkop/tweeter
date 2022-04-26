@@ -2,12 +2,15 @@
 //   console.log(event);
 // });
 
-// $(() => {
-//   console.log(blur);
-// });
+$(() => {
+  $("#tweet-text").on("input", function () {
+    console.log(this);
+    const $startNum = $(this).val();
+    console.log($startNum);
+    const $childrenVal = $(this).next().children(".counter").val();
 
-$("#tweet-text").on("input", () => {
-  console.log("input is here!");
+    console.log($childrenVal);
+  });
 });
 
 // $("#idofsomething").on("keydown", () => {
