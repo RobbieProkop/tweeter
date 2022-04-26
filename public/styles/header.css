@@ -1,10 +1,13 @@
-.container {
+.profile-background {
   position: relative;
   background-image: url("../images/he-zhu-1YODHOIj46Q-unsplash.jpg");
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  height: 80vh;
+  height: 75vh;
 }
 .profile {
   display: flex;
@@ -14,7 +17,7 @@
   padding-top: 8rem;
 }
 .profile img {
-  max-height: 80vh;
+  max-height: 75vh;
   max-width: 22vw;
 }
 

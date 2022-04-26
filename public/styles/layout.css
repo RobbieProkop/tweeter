@@ -20,10 +20,11 @@
 
 body {
   color: #333;
-  background-color: #fff;
+
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6;
+  background-image: url("../images/texture-bg.png");
 }
 
 ul {
@@ -50,4 +51,28 @@ span {
 
 img {
   width: 100%;
+}
+
+button {
+  background-color: #4267b2;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* .container {
+  background: ;
+} */
+
+.container {
+  /* display: flex;
+  justify-content: space-around; */
+  /* width: 90%; */
+  padding: 0 10%;
+}
+
+.container h2 {
+  padding: 1rem 0;
 }

@@ -1,0 +1,26 @@
+.tweet-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#tweet-text {
+  border: none;
+  border-bottom: 4px solid #333;
+  border-radius: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2rem;
+  /* opacity: 0.2; */
+  color: #333;
+  padding-left: 1rem;
+}
+
+#tweet-text:focus {
+  outline: none;
+}
+
+.tweet-form div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}

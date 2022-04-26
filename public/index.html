@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="./styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/footer.css" type="text/css" />
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -39,18 +41,52 @@
         </h1>
         <div>
           <h3><span>Write</span> a new tweet</h3>
-          <i class="fas fa-angle-double-down" id="arrow-icon"></i>
+          <a href="#tweet-text">
+            <i class="fas fa-angle-double-down" id="arrow-icon"></i
+          ></a>
         </div>
       </nav>
+      <div class="profile-background">
+        <div class="profile">
+          <img src="./images/buddha.png" alt="" />
+          <h2 class="name">Gotama <span>Buddha</span></h2>
+        </div>
+      </div>
     </header>
     <!-- Top nav bar (fixed) -->
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <div class="profile">
-        <img src="./images/buddha.png" alt="" />
-        <h2 class="name">Gotama <span>Buddha</span></h2>
-      </div>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form action="/tweets/" method="POST" class="tweet-form">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit"><span>Tweet</span></button>
+            <output name="counter" class="counter" for="tweet-text"
+              ><span>140</span></output
+            >
+          </div>
+        </form>
+      </section>
     </main>
+
+    <footer
+      class="bg-dark text-light d-flex pt-3 pb-3 justify-content-center fixed-bottom"
+    >
+      <div>
+        <p>&copy; 2022 DhammaDevs</p>
+        <p>
+          Made with the help of
+          <a
+            href="http://www.lighthouselabs.ca"
+            target="_blank"
+            class="text-light"
+            >Lighthouse Labs</a
+          >
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
