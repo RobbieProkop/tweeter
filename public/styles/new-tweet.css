@@ -17,7 +17,7 @@
   padding-left: 0.5rem;
   padding-bottom: 2.5rem;
   height: 1.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   resize: none;
 }
 
