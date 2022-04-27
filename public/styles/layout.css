@@ -71,9 +71,11 @@ button {
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
-.container .new-tweet {
+.container section {
   width: 90%;
 }
 .container h2 {
@@ -85,4 +87,47 @@ button {
 }
 .negative-num {
   color: red;
+}
+
+#tweet-container {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #dcde9f;
+  border-radius: 10%;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tweet-header .user {
+  display: flex;
+  align-items: center;
+  /* padding: 0 0.5rem; */
+}
+
+.user h3 {
+  padding-left: 0.7rem;
+}
+
+.user img {
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+  /* padding-right: 0.7rem; */
+}
+
+#tweet-container > div {
+  border-bottom: 4px solid #333;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.5rem;
+}
+
+#tweet-container footer {
+  display: flex;
+  justify-content: space-between;
 }
