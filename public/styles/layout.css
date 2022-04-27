@@ -98,6 +98,10 @@ button {
   margin: 1rem;
 }
 
+#tweet-container:hover {
+  box-shadow: 5px 5px 5px #ccd6d8;
+}
+
 .tweet-header {
   display: flex;
   justify-content: space-between;
@@ -121,6 +125,10 @@ button {
   /* padding-right: 0.7rem; */
 }
 
+.tweet-header h4 {
+  opacity: 0.6;
+}
+
 #tweet-container > div {
   border-bottom: 4px solid #333;
   font-family: "Source Sans Pro", sans-serif;
@@ -130,4 +138,11 @@ button {
 #tweet-container footer {
   display: flex;
   justify-content: space-between;
+  font-size: 1rem;
+  padding-top: 0.7rem;
+}
+
+#tweet-container footer i:hover {
+  color: #dcde9f;
+  cursor: pointer;
 }
