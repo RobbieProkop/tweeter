@@ -129,7 +129,7 @@ button {
   opacity: 0.6;
 }
 
-#tweet-container > div {
+.tweet {
   border-bottom: 4px solid #333;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
