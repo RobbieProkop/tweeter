@@ -37,18 +37,18 @@
   </head>
 
   <body>
+    <nav id="navbar" class="navbar top">
+      <h1 class="logo">
+        <a href="#home"><span>Tweeter</span></a>
+      </h1>
+      <div>
+        <h3><span>Write</span> a new tweet</h3>
+        <a href="#tweet-text">
+          <i class="fas fa-angle-double-down" id="arrow-icon"></i
+        ></a>
+      </div>
+    </nav>
     <header>
-      <nav id="navbar" class="navbar top">
-        <h1 class="logo">
-          <a href="#home"><span>Tweeter</span></a>
-        </h1>
-        <div>
-          <h3><span>Write</span> a new tweet</h3>
-          <a href="#tweet-text">
-            <i class="fas fa-angle-double-down" id="arrow-icon"></i
-          ></a>
-        </div>
-      </nav>
       <div class="profile-background">
         <div class="profile">
           <img src="./images/buddha.png" alt="" />
@@ -62,8 +62,13 @@
     <main class="container">
       <section class="new-tweet">
         <form action="/tweets/" method="POST" class="tweet-form">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <textarea
+            name="text"
+            id="tweet-text"
+            rows="2"
+            aria-label="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
           <div>
             <button type="submit"><span>Tweet</span></button>
             <output name="counter" class="counter" for="tweet-text"
@@ -73,23 +78,25 @@
         </form>
       </section>
       <section id="tweet-container">
-        <header class="tweet-header">
-          <div class="user">
-            <img src="./images/kaonashi.jpeg" alt="" />
-            <h3>KaoNashi</h3>
-          </div>
-          <h4>@USerNAme</h4>
-        </header>
-        <div>Tweet area with border-bottom</div>
+        <article>
+          <header class="tweet-header">
+            <div class="user">
+              <img src="https://i.imgur.com/73hZDYK.png" alt="" />
+              <h3>KaoNashi</h3>
+            </div>
+            <h4>@USerNAme</h4>
+          </header>
+          <div>Tweet area with border-bottom</div>
 
-        <footer>
-          <p>date published</p>
-          <div>
-            <i class="fas fa-solid fa-flag"></i>
-            <i class="fa-solid fa-arrows-rotate"></i>
-            <i class="fas fa-solid fa-heart"></i>
-          </div>
-        </footer>
+          <footer>
+            <p>date published</p>
+            <div>
+              <i class="fas fa-solid fa-flag"></i>
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <i class="fas fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
       </section>
     </main>
 

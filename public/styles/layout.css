@@ -119,8 +119,8 @@ button {
 }
 
 .user img {
-  max-height: 100px;
-  max-width: 100px;
+  max-height: 50px;
+  max-width: 50px;
   border-radius: 50%;
   /* padding-right: 0.7rem; */
 }
@@ -143,6 +143,6 @@ button {
 }
 
 #tweet-container footer i:hover {
-  color: #dcde9f;
+  color: #f4c84b;
   cursor: pointer;
 }
