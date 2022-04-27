@@ -42,6 +42,7 @@ $(() => {
   ];
 
   const createTweetElement = (data) => {
+    $("time.timeago").timeago();
     const $tweets = $(`<article>
     <header class="tweet-header">
     <div class="user">
@@ -54,7 +55,7 @@ $(() => {
     <div class="tweet">${data.content.text}</div>
     
     <footer>
-    <p>${Date.parse(data.created_at)}</p>
+    <p>${$.timeago(data.created_at)}</p>
     <div>
     <i class="fas fa-solid fa-flag"></i>
     <i class="fa-solid fa-arrows-rotate"></i>
@@ -64,10 +65,16 @@ $(() => {
     </article>`);
     return $tweets;
   };
+
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       $("#tweet-container").append(createTweetElement(tweet));
     }
   };
   renderTweets(data);
+
+  $("form").submit(function (event) {
+    alert("handler has been called");
+    event.preventDefault();
+  });
 });
