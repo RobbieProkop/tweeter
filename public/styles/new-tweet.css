@@ -1,9 +1,13 @@
 .error {
   background-color: #eed202;
   margin-top: 1rem;
-  border-radius: 8%;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.error i {
+  padding-right: 1rem;
 }
 
 .tweet-form {
