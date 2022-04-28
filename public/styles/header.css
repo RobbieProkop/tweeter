@@ -1,5 +1,5 @@
 .profile-background {
-  margin-top: 6.5rem;
+  margin-top: 5rem;
   /* position: relative; */
   background-image: url("../images/he-zhu-1YODHOIj46Q-unsplash.jpg");
   background-position: center;
@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 55vh;
 }
 .profile {
