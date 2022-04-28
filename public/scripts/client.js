@@ -78,16 +78,15 @@ $(() => {
     const textarea = $("#tweet-text").val().trim();
     if (!textarea) {
       $error.slideDown(250);
-      $error.text(
-        `<i class="fa-solid fa-circle-exclamation"></i> Please enter a tweet!`
-      );
+      $error.text//   .addClass("fa-solid fa-circle-exclamation") // $("<i>")
+      //   .appendTo($error)
+      //   .text("Please enter a tweet!")
+      `Please enter a tweet!`();
       return $error;
     } else if (textarea.length > 140) {
       console.log("tooo long");
       $error.slideDown(250);
-      $error.text(
-        `<i class="fa-solid fa-circle-exclamation"></i> Character limit reached`
-      );
+      $error.text(`Character limit reached`);
       return $error;
     }
     if ($error.is(":visible")) {
