@@ -75,18 +75,21 @@ $(() => {
   $("form").submit(function (event) {
     event.preventDefault();
     let $error = $("#error");
-    const textarea = $("#tweet-text").val().trim();
-    if (!textarea) {
+    const $textarea = $("#tweet-text").val().trim();
+    $error.empty();
+    if (!$textarea) {
+      const enterTweet = "Please enter a tweet!";
       $error.slideDown(250);
-      $error.text//   .addClass("fa-solid fa-circle-exclamation") // $("<i>")
-      //   .appendTo($error)
-      //   .text("Please enter a tweet!")
-      `Please enter a tweet!`();
+      $error.append(
+        `<i class= 'fa-solid fa-circle-exclamation'></i> ${enterTweet}`
+      );
       return $error;
-    } else if (textarea.length > 140) {
-      console.log("tooo long");
+    } else if ($textarea.length > 140) {
+      const tooMany = "Character limit reached";
       $error.slideDown(250);
-      $error.text(`Character limit reached`);
+      $error.append(
+        `<i class= 'fa-solid fa-circle-exclamation'></i> ${tooMany}`
+      );
       return $error;
     }
     if ($error.is(":visible")) {
@@ -110,11 +113,7 @@ $(() => {
         });
       },
     });
-
-    //small bug found! If i use this code below, the first tweet won't show until i refresh. May be a bug to ask a mentor about
-    //// empty the tweets that we previously had,
-    // $("#tweet-container").empty();
-    // //add the tweets again, but this time with the new tweet at the top
-    // loadTweets();
+    // this clears the textarea
+    $("#tweet-text").val("");
   });
 });

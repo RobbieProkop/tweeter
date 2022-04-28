@@ -62,9 +62,11 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: padding 0.5s;
 }
 button:hover {
   background-color: #aaaf87;
+  padding: 1.2rem 1.7rem;
 }
 
 .container {
@@ -162,4 +164,26 @@ button:hover {
 }
 .return-to-top button i {
   color: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+  body > div {
+    display: flex;
+    min-height: 50vh;
+    min-width: 50vw;
+  }
+  #header {
+    margin-top: 10rem;
+    padding-left: 5rem;
+  }
+  .profile-background {
+    margin-top: 10rem;
+    height: 45vh;
+    width: 40vw;
+  }
+
+  .profile img {
+    max-width: 22vw;
+    max-height: 40vh;
+  }
 }

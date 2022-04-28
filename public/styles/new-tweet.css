@@ -37,3 +37,12 @@
   align-items: center;
   margin: 1rem 0;
 }
+
+@media only screen and (min-width: 1024px) {
+  #error {
+    margin-top: 6rem;
+  }
+  .tweet-form {
+    padding-top: 6rem;
+  }
+}
