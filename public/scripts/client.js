@@ -68,10 +68,20 @@ $(() => {
       type: "POST",
       url: "/tweets/",
       data: str,
+      success: () => {
+        $.ajax({
+          type: "GET",
+          url: "/tweets/",
+          success: (response) => {
+            $("#tweet-container").empty();
+            renderTweets(response);
+          },
+        });
+      },
     });
     //empty the tweets that we previously had,
-    $("#tweet-container").empty();
-    //add the tweets again, but this time with the new tweet at the top
-    loadTweets();
+    // $("#tweet-container").empty();
+    // //add the tweets again, but this time with the new tweet at the top
+    // loadTweets();
   });
 });
