@@ -4,10 +4,16 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 //creates an element with HTML for when a tweet is made
 const createTweetElement = (data) => {
   $("time.timeago").timeago();
-  const $tweets = $(`<article>
+  const $tweets = `<article>
   <header class="tweet-header">
   <div class="user">
   <img src=
@@ -16,7 +22,7 @@ const createTweetElement = (data) => {
   </div>
   <h4>${data.user.handle}</h4>
   </header>
-  <div class="tweet">${data.content.text}</div>
+  <div class="tweet">${escape(data.content.text)}</div>
   
   <footer>
   <p>${$.timeago(data.created_at)}</p>
@@ -26,7 +32,7 @@ const createTweetElement = (data) => {
   <i class="fas fa-solid fa-heart"></i>
   </div>
   </footer>
-  </article>`);
+  </article>`;
   return $tweets;
 };
 
@@ -79,7 +85,9 @@ $(() => {
         });
       },
     });
-    //empty the tweets that we previously had,
+
+    //small bug found! If i use this code below, the first tweet won't show until i refresh. May be a bug to ask a mentor about
+    //// empty the tweets that we previously had,
     // $("#tweet-container").empty();
     // //add the tweets again, but this time with the new tweet at the top
     // loadTweets();
