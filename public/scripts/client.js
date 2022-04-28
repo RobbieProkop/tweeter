@@ -66,6 +66,9 @@ const loadTweets = () => {
   });
 };
 
+let $error = $("#error");
+const textarea = $("#tweet-text").val();
+// $error.hide();
 //document.ready
 $(() => {
   //load all the tweets we currently have
@@ -74,11 +77,31 @@ $(() => {
   //upon form submission, prevent submit
   $("form").submit(function (event) {
     event.preventDefault();
-    if (Number($(this).find(".counter").text()) < 0) {
-      return alert("Max character limit reached");
-    } else if (Number($(this).find(".counter").text()) >= 140) {
-      return alert("Please enter a tweet!");
+    $error.slideUp(100);
+    if (!textarea) {
+      $error.text(
+        `<i class="fa-solid fa-circle-exclamation"></i> Please enter a tweet!`
+      );
+      $error.slideDown(200);
+      return $error;
+    } else if (textarea > 140) {
+      $error.text(
+        `<i class="fa-solid fa-circle-exclamation"></i> Character limit reached`
+      );
+      $error.slideDown(200);
+      return $error;
     }
+    // if (Number($(this).find(".counter").text()) < 0) {
+    //   $error.text(
+    //     `<i class="fa-solid fa-circle-exclamation"></i> Too many characters`
+    //   );
+    //   $error.slideDown(200);
+    //   return $error;
+    // } else if (Number($(this).find(".counter").text()) >= 140) {
+    //   $error.text(`Too many characters`);
+    //   $error.slideDown(200);
+    //   return $error;
+    // }
     //create a string to use
     const str = $("form").serialize();
     //post that string

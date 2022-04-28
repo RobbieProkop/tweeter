@@ -66,9 +66,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div class="error">
-          <i class="fa-solid fa-circle-exclamation"></i> some error here
-        </div>
+        <div id="error"></div>
         <form action="/tweets/" method="POST" class="tweet-form">
           <textarea
             name="text"
@@ -86,14 +84,14 @@
         </form>
       </section>
       <section id="tweet-container"></section>
+      <div class="return-to-top">
+        <a href="#tweet-text">
+          <button>
+            <i class="fa-solid fa-chevrons-up"></i>
+          </button>
+        </a>
+      </div>
     </main>
-    <div>
-      <a href="#tweet-text">
-        <button>
-          <i class="fa-solid fa-chevrons-up"></i>
-        </button>
-      </a>
-    </div>
 
     <footer class="main-footer">
       <div>
