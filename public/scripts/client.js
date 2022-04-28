@@ -4,6 +4,18 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+// // Smooth Scrolling
+// document.querySelectorAll('a[href^="#"]').forEach((elem) => {
+//   elem.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     document.querySelector(elem.getAttribute("href")).scrollIntoView({
+//       behavior: "smooth",
+//       offsetTop: -60,
+//     });
+//     800;
+//   });
+// });
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
