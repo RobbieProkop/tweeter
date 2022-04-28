@@ -33,3 +33,33 @@
   padding-top: 1rem;
   color: #f4c84b;
 }
+
+@media only screen and (max-width: 414px) {
+  .navbar {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .navbar div a {
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar div a h3 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5rem;
+  }
+}
+/* @media only screen and (max-width: 280px) {
+  .navbar div a {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5rem;
+  }
+} */

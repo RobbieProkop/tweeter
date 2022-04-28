@@ -9,3 +9,14 @@
   justify-content: space-around;
   align-items: center;
 }
+
+@media only screen and (max-width: 550px) {
+  .main-footer > div {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .main-footer > div {
+    padding-left: 1rem;
+  }
+}

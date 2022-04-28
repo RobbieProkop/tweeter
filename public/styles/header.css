@@ -23,3 +23,39 @@
 .name {
   padding-top: 1rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  #header {
+    margin-top: 10rem;
+    padding-left: 5rem;
+  }
+  .profile-background {
+    margin-top: 10rem;
+    height: 45vh;
+    width: 40vw;
+  }
+
+  .profile img {
+    max-width: 22vw;
+    max-height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .profile img {
+    max-width: 50vw;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 550px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 330px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}

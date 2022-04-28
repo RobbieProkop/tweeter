@@ -160,10 +160,7 @@ button:hover {
 
 .return-to-top button {
   border-radius: 50%;
-  color: #fff;
-}
-.return-to-top button i {
-  color: #fff;
+  padding: 0.9rem 1.2rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -172,18 +169,16 @@ button:hover {
     min-height: 50vh;
     min-width: 50vw;
   }
-  #header {
-    margin-top: 10rem;
-    padding-left: 5rem;
-  }
-  .profile-background {
-    margin-top: 10rem;
-    height: 45vh;
-    width: 40vw;
-  }
+}
 
-  .profile img {
-    max-width: 22vw;
-    max-height: 40vh;
+@media only screen and (max-width: 550px) {
+  #tweet-container article {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .tweet-header {
+    display: flex;
+    flex-direction: column;
   }
 }
