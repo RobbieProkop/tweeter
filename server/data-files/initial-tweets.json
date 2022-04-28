@@ -8,18 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1650756489488
-  },
-  {
-    "user": {
-      "name": "Descartes",
-      "avatars": "https://i.imgur.com/nlhLi3I.png",
-      "handle": "@rd"
-    },
-    "content": {
-      "text": "Je pense , donc je suis"
-    },
-    "created_at": 1650842889488
+    "created_at": 1650844661355
   },
   {
     "user": {
@@ -30,7 +19,7 @@
     "content": {
       "text": "Nature does not hurry, yet everything is accomplished"
     },
-    "created_at": 1650929289488
+    "created_at": 1650931061355
   },
   {
     "user": {
@@ -41,6 +30,6 @@
     "content": {
       "text": "Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned."
     },
-    "created_at": 1651015689488
+    "created_at": 1651017461355
   }
 ]
