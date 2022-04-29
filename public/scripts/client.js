@@ -4,18 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// // Smooth Scrolling
-// document.querySelectorAll('a[href^="#"]').forEach((elem) => {
-//   elem.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     document.querySelector(elem.getAttribute("href")).scrollIntoView({
-//       behavior: "smooth",
-//       offsetTop: -60,
-//     });
-//     800;
-//   });
-// });
-
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -68,6 +56,17 @@ const loadTweets = () => {
 
 //document.ready
 $(() => {
+  // Smooth Scrolling
+  document.querySelectorAll('a[href^="#"]').forEach((elem) => {
+    elem.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector(elem.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+        offsetTop: -60,
+      });
+      800;
+    });
+  });
   //load all the tweets we currently have
   loadTweets();
 
@@ -115,5 +114,6 @@ $(() => {
     });
     // this clears the textarea
     $("#tweet-text").val("");
+    $(this).next().children(".counter").val(140);
   });
 });
