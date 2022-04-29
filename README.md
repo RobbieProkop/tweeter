@@ -6,6 +6,10 @@ This repository is built using HTML, CSS, JS, jQuery and AJAX for the front-end,
 
 Built by Robbie Prokop, using a template given by the Lighthouse Labs.
 
+["Landing Page - Mobile with hover"](https://github.com/RobbieProkop/tweeter/blob/master/docs/1.%20Landing%20Page%20-%20Mobile.png)
+!["Tweet Section - Mobile with button hover"](https://github.com/RobbieProkop/tweeter/blob/master/docs/2.%20Tweet%20Section%20-%20Mobile.png)
+!["Landing Page - Desktop"](https://github.com/RobbieProkop/tweeter/blob/master/docs/3.%20Landing%20Page%20-%20Desktop.png)
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository.
