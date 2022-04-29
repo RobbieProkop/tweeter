@@ -162,6 +162,9 @@ button:hover {
   border-radius: 50%;
   padding: 0.9rem 1.2rem;
 }
+.return-to-top button:hover {
+  padding: 1.1rem 1.4rem;
+}
 
 @media only screen and (min-width: 1024px) {
   body > div {

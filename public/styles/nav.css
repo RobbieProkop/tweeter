@@ -1,5 +1,4 @@
 .navbar {
-  /* background-color: #4056a1; lighthouse colour*/
   background-color: #aaaf87;
   color: #fff;
   height: 5rem;
@@ -56,10 +55,3 @@
     padding-right: 0.5rem;
   }
 }
-/* @media only screen and (max-width: 280px) {
-  .navbar div a {
-    display: flex;
-    flex-direction: row;
-    padding-left: 0.5rem;
-  }
-} */

@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1650943412138
+    "created_at": 1650947525762
   },
   {
     "user": {
@@ -19,17 +19,17 @@
     "content": {
       "text": "Nature does not hurry, yet everything is accomplished"
     },
-    "created_at": 1651029812138
+    "created_at": 1651033925762
   },
   {
     "user": {
       "name": "Buddha",
-      "avatars": "https://imgur.com/a/yOeuWU4",
+      "avatars": "https://i.imgur.com/5fUVPRP.png",
       "handle": "@Buddha"
     },
     "content": {
       "text": "Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned."
     },
-    "created_at": 1651116212138
+    "created_at": 1651120325762
   }
 ]

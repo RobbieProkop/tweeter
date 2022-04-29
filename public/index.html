@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-    <!-- External CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      type="text/css"
-    /> -->
     <!-- App CSS -->
     <link rel="stylesheet" href="./styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
@@ -38,16 +32,24 @@
       type="text/javascript"
       src="./scripts/composer-char-counter.js"
     ></script>
+    <script type="text/javascript" src="./scripts/toggle-tweet.js"></script>
+    <script
+      type="text/javascript"
+      src="./scripts/js-prevention-security.js"
+    ></script>
+    <script type="text/javascript" src="./scripts/smooth-scrolling.js"></script>
+    <script type="text/javascript" src="./scripts/create-tweets.js"></script>
     <script type="text/javascript" src="./scripts/client.js"></script>
   </head>
 
   <body>
+    <!-- navbar -->
     <nav id="navbar" class="navbar top">
       <h1 class="logo">
         <a href="#home"><span>Tweeter</span></a>
       </h1>
       <div>
-        <a href="#tweet-text"
+        <a href="#" class="toggle-tweet"
           ><h3><span>Write</span> a new tweet</h3>
 
           <i class="fas fa-angle-double-down" id="arrow-icon"></i
@@ -55,6 +57,7 @@
       </div>
     </nav>
     <div>
+      <!-- header -->
       <header id="header">
         <div class="profile-background">
           <div class="profile">
@@ -63,13 +66,14 @@
           </div>
         </div>
       </header>
-      <!-- Top nav bar (fixed) -->
 
-      <!-- Page-specific (main) content here -->
+      <!-- Section containing new tweet form and posted tweets -->
       <main class="container">
-        <section class="new-tweet">
+        <section id="new-tweet" hidden>
+          <!-- where the error messages will be put -->
           <div id="error"></div>
-          <form action="/tweets/" method="POST" class="tweet-form">
+          <!-- new tweet form -->
+          <form class="tweet-form">
             <textarea
               name="text"
               id="tweet-text"
@@ -85,9 +89,10 @@
             </div>
           </form>
         </section>
+        <!-- posted tweets -->
         <section id="tweet-container"></section>
         <div class="return-to-top">
-          <a href="#tweet-text">
+          <a href="#header">
             <button>
               <i class="fas fa-solid fa-angle-double-up"></i>
             </button>
@@ -95,7 +100,7 @@
         </div>
       </main>
     </div>
-
+    <!-- footer -->
     <footer class="main-footer">
       <div>
         <p>&copy; 2022 DhammaDevs</p>
